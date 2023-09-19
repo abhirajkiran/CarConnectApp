@@ -1,3 +1,4 @@
+import 'package:cam_app/screens/register.dart';
 import 'package:flutter/material.dart';
 
 class MyLogin extends StatefulWidget {
@@ -93,7 +94,11 @@ class _MyLoginState extends State<MyLogin> {
                             children: [
                               TextButton(
                                 onPressed: () {
-                                  Navigator.pushNamed(context, 'register');
+                                  Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => MyRegister()),
+                            );
                                 },
                                 child: Text(
                                   'Sign Up',
